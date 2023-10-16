@@ -18,7 +18,7 @@ The Java Setter/Getter Generator is a tool that simplifies the process of genera
 
 3. Run the Setter/Getter Generator with the following command:
    
-        java -classpath path\common\dist\rwcommon.jar com.rogue.util.SetterGetterGenerator YourClassName
+        java -classpath path\SetterGetterGenerator\dist\rwcommon.jar com.rogue.util.SetterGetterGenerator YourClassName
    Replace YourClassName with the name of the Java class for which you want to generate setters, getters, and a default constructor.
 
 4. The tool will analyze the class and generate the necessary setter and getter methods, as well as a default constructor.
