@@ -25,10 +25,13 @@ The Java Setter/Getter Generator is a tool that simplifies the process of genera
 
 5. The generated code will be printed to the console, and you can copy and paste it into your Java class.
 
-## Contribution
-If you would like to contribute to this project or report issues, please feel free to open an issue or create a pull request on the GitHub repository.
-
 ## Source Files
--Source files are in <span style="background-color: #FFFF00">SetterGetterGenerator\src\com\rogue\util\SetterGetterGenerator.java</span>
+-Source files are in *SetterGetterGenerator\src\com\rogue\util\SetterGetterGenerator.java*
 ## Class files
--Class files are in SetterGetterGenerator\classes\
+-Class files are in *SetterGetterGenerator\classes*
+
+## Contribution
+If you would like to contribute to this project or report issues, please feel free to open an issue or create a pull request on the [SetterGetterGeenerator repository](https://github.com/RogueWarrior34/SetterGetterGenerator/blob/main/LICENSE).
+
+## License
+This Java Setter/Getter Generator is open-source software released under the [MIT License](https://github.com/RogueWarrior34/SetterGetterGenerator/blob/main/LICENSE). Feel free to use and modify it in your projects.
