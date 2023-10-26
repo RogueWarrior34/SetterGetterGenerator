@@ -14,7 +14,7 @@ The Java Setter/Getter Generator is a tool that simplifies the process of genera
 ## Usage
 1. Clone this repository to your local machine or download the source code.
 
-2. Build the project using your preferred Java development environment, or compile the source code manually.
+2. Build your project using your preferred Java development environment, or compile the source code manually.
 
 3. Run the Setter/Getter Generator with the following command:
    
@@ -24,6 +24,9 @@ The Java Setter/Getter Generator is a tool that simplifies the process of genera
 4. The tool will analyze the class and generate the necessary setter and getter methods, as well as a default constructor.
 
 5. The generated code will be printed to the console, and you can copy and paste it into your Java class.
+
+## Contribution
+If you would like to contribute to this project or report issues, please feel free to open an issue or create a pull request on the GitHub repository.
 
 ## Source Files
 -Source files are in <span style="background-color: #FFFF00">SetterGetterGenerator\src\com\rogue\util\SetterGetterGenerator.java</span>
