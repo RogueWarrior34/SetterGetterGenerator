@@ -19,14 +19,153 @@ The Java Setter/Getter Generator is a tool that simplifies the process of genera
 3. Run the Setter/Getter Generator with the following command:
    
         java -classpath path\SetterGetterGenerator\dist\rwcommon.jar com.rogue.util.SetterGetterGenerator YourClassName
+   
    Replace YourClassName with the name of the Java class for which you want to generate setters, getters, and a default constructor.
 
-4. The tool will analyze the class and generate the necessary setter and getter methods, as well as a default constructor.
+5. The tool will analyze the class and generate the necessary setter and getter methods, as well as a default constructor.
 
-5. The generated code will be printed to the console, and you can copy and paste it into your Java class.
+6. The generated code will be printed to the console, and you can copy and paste it into your Java class.
+
+## Example
+Suppose you have a Java class named EmployeeDTO as 
+```
+public class EmployeeDTO
+{
+private String employeeId;
+private String name;
+private int designationCode;
+private Date dateOfBirth;
+private char gender;
+private boolean isIndian;
+private BigDecimal basicSalary;
+private String panNumber;
+private String aadharCardNumber;
+}
+```
+. Running the tool as follows in the same directory as your class:
+
+```
+java -classpath path\SetterGetterGenerator\dist\rwcommon.jar com.rogue.util.SetterGetterGenerator EmployeeDTO
+```
+will generate the following code and will save it in a file named as *tmp.tmp*:
+
+```
+public class EmployeeDTO
+{
+private String employeeId;
+private String name;
+private int designationCode;
+private Date dateOfBirth;
+private char gender;
+private boolean isIndian;
+private BigDecimal basicSalary;
+private String panNumber;
+private String aadharCardNumber;
+
+public EmployeeDTO()
+{
+this.employeeId="";
+this.name="";
+this.designationCode=0;
+this.dateOfBirth=null;
+this.gender=' ';
+this.isIndian=false;
+this.basicSalary=null;
+this.panNumber="";
+this.aadharCardNumber="";
+}
+public void setEmployeeId(java.lang.String employeeId)
+{
+this.employeeId=employeeId;
+}
+public java.lang.String getEmployeeId()
+{
+return this.employeeId;
+}
+public void setName(java.lang.String name)
+{
+this.name=name;
+}
+public java.lang.String getName()
+{
+return this.name;
+}
+public void setDesignationCode(int designationCode)
+{
+this.designationCode=designationCode;
+}
+public int getDesignationCode()
+{
+return this.designationCode;
+}
+public void setDateOfBirth(java.util.Date dateOfBirth)
+{
+this.dateOfBirth=dateOfBirth;
+}
+public java.util.Date getDateOfBirth()
+{
+return this.dateOfBirth;
+}
+public void setGender(GENDER gender)
+{
+if(gender==GENDER.MALE) this.gender='M';
+else this.gender='F';
+}
+public char getGender()
+{
+return this.gender;
+}
+public void setIsIndian(boolean isIndian)
+{
+this.isIndian=isIndian;
+}
+public boolean getIsIndian()
+{
+return this.isIndian;
+}
+public void setBasicSalary(java.math.BigDecimal basicSalary)
+{
+this.basicSalary=basicSalary;
+}
+public java.math.BigDecimal getBasicSalary()
+{
+return this.basicSalary;
+}
+public void setPANNumber(java.lang.String panNumber)
+{
+this.panNumber=panNumber;
+}
+public java.lang.String getPANNumber()
+{
+return this.panNumber;
+}
+public void setAadharCardNumber(java.lang.String aadharCardNumber)
+{
+this.aadharCardNumber=aadharCardNumber;
+}
+public java.lang.String getAadharCardNumber()
+{
+return this.aadharCardNumber;
+}
+public int hashCode()
+{
+return this.employeeId.toUpperCase().hashCode();
+}
+public boolean equals(Object other)
+{
+if(!(other instanceof EmployeeDTOInterface)) return false;
+EmployeeDTOInterface employeeDTO=(EmployeeDTOInterface) other;
+return this.employeeId.equalsIgnoreCase(employeeDTO.getEmployeeId());
+}
+public int compareTo(EmployeeDTOInterface employeeDTO)
+{
+return this.employeeId.compareToIgnoreCase(employeeDTO.getEmployeeId());
+}
+}
+```
 
 ## Source Files
--Source files are in *SetterGetterGenerator\src\com\rogue\util\SetterGetterGenerator.java*
+-Source files are in *SetterGetterGenerator\src\com\rogue\util*
 ## Class files
 -Class files are in *SetterGetterGenerator\classes*
 
